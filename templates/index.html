@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Classifier</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .rainbow-title {
+            background-image: linear-gradient(to right, #ff2b2b, #ff7f2a, #ffdb2b, #a2e52a, #2af5ad, #2ad6f5, #2a8ef5, #a42af5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="rainbow-title">Image Classifier</h1>
+    <p>Welcome to the Image Classifier project!</p>
+    <p>My name is Soham, and I am a second-year computer engineering student. I developed this project to learn the basics of Artificial Intelligence Markup Language (AIML) and its implementation. The purpose of this project is to create an image classifier that can predict the content of an image.</p>
+    <p>Please upload an image file below and click the "Classify" button to see the prediction.</p>
+
+    <form action="{{ url_for('classify_image') }}" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <input type="submit" value="Classify" class="animated-button">
+    </form>
+
+    {% if prediction %}
+    <div class="prediction">
+        <h2>Prediction:</h2>
+        <p>{{ prediction }}</p>
+    </div>
+    {% endif %}
+
+    <div class="profile-links">
+        <p>Connect with me:</p>
+        <a href="https://www.linkedin.com/in/soham-sankpal-204a01265/"><img src="{{ url_for('static', filename='linkedin.png') }}" alt="LinkedIn"></a>
+        <a href="https://github.com/blue0777/"><img src="{{ url_for('static', filename='github.png') }}" alt="GitHub"></a>
+        <p>Feel free to fork this project on GitHub.</p>
+    </div>
+</body>
+</html>

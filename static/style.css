@@ -1,0 +1,133 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styles */
+p {
+    margin-bottom: 10px;
+}
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #007acc;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Prediction styles */
+.prediction {
+    margin-top: 20px;
+    background-color: #282c34;
+    border-radius: 5px;
+    padding: 20px;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.prediction h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.prediction p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+/* Profile links styles */
+.profile-links {
+    margin-top: 20px;
+}
+
+.profile-links p {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.profile-links a {
+    color: #007acc;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Logo styles */
+.profile-links img {
+    width: 50px; /* Adjust the width as desired */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 10px;
+}
+
+/* Additional text styles */
+.upload-text {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.button-text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+
+    .prediction h2 {
+        font-size: 20px;
+    }
+
+    .prediction p {
+        font-size: 16px;
+    }
+}
