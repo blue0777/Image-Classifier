@@ -12,7 +12,7 @@ To get started with the image classifier AI model, follow these steps:
 
 1.  Clone the repository:
 
-    git clone https://github.com/your-repo
+    git clone https://github.com/blue0777/Image-Classifier
 
 3.  Install the required dependencies:
 
