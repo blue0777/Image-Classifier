@@ -35,7 +35,7 @@ Customization
 If you want to customize the image classifier AI model, you can modify the following files:
 
 *   `app.py`: Contains the Flask application logic.
-*   `model.py`: Implements the image classification model.
+*   `train.py`: Implements the image classification model.
 *   `templates/index.html`: Defines the HTML template for the web interface.
 
 Contributing
