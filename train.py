@@ -10,7 +10,7 @@ dataset_dir = 'images'
 num_classes = 90  # Update the number of classes
 image_size = (150, 150)
 
-# Create an ImageDataGenerator for data augmentation and normalization expfor Soham to make #todo it
+
 datagen = ImageDataGenerator(
     rescale=1.0 / 255,
     shear_range=0.2,
@@ -35,7 +35,7 @@ validation_generator = datagen.flow_from_directory(
     subset='validation'
 )
 
-# Create the CNN mode
+
 model = keras.Sequential([
     keras.layers.Conv2D(32, (3, 3), activation='relu', input_shape=(150, 150, 3)),
     keras.layers.MaxPooling2D((2, 2)),
