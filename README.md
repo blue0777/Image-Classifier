@@ -43,7 +43,7 @@ Contributing
 
 If you'd like to contribute to the image classifier AI model, you can:
 
-*   Fork the repository on GitHub: [https://github.com/your-repo](https://github.com/blue0777/Image-Classifier)
+*   Fork the repository on GitHub: [Image Classifier](https://github.com/blue0777/Image-Classifier)
 *   Add your changes or improvements
 *   Submit a pull request
 
@@ -52,7 +52,7 @@ Connect on LinkedIn
 
 If you have any questions or want to connect, feel free to reach out on LinkedIn:
 
-[Your Name](https://www.linkedin.com/in/soham-sankpal-204a01265/)
+[Soham Sankpal](https://www.linkedin.com/in/soham-sankpal-204a01265/)
 
 License
 -------
